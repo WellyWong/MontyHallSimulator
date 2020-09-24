@@ -1,6 +1,6 @@
 //Reference: https://github.com/WellyWong/content/blob/master/HW0.ipynb
 
-//Simulate the opening of a "goat door" that doesn't contain the prize,
+//Simulate the opening of a "goat door" (revealedDoor) that doesn't contain the prize,
 //and is different from the contestants guess
 void revealedGoatDoor(std::vector<int>& doorWithPrize, std::vector<int>& guess, std::vector<int>& revealedDoor)
 {
@@ -20,8 +20,8 @@ void revealedGoatDoor(std::vector<int>& doorWithPrize, std::vector<int>& guess, 
 	}
 }
 
-//The strategy that always switches a guess after the goat door is opened
-//The new door after switching, should be different from both guesses and goatdoors
+//The strategy that always switches a guess after the goat door is revealed
+//The new door after switching, should be different from both guesses and revealedDoor(goat door)
 void switchGuess(std::vector<int>& guess, std::vector<int>& revealedDoor)
 {
 	int n = (int)guess.size();
